@@ -1,12 +1,14 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Download, Github, Linkedin, ChevronDown } from 'lucide-react';
+import { Download, Github, Linkedin,Mail, ChevronDown } from 'lucide-react';
 import profileImage from './profile_ai.png.png';
 const roles = [
-  'Data Analyst',
+  'Data Scientist',
+  'Business Analyst',
   'Power BI Developer',
-  'Python Enthusiast',
-  'Business Intelligence',
+  'Machine Learning',
+  'Python Developer',
+  'Generative AI Enthusiast',
 ];
 
 export default function Hero() {
@@ -125,7 +127,7 @@ export default function Hero() {
               transition={{ delay: 0.5 }}
               className="text-dark-400 text-lg leading-relaxed mb-8 max-w-xl mx-auto lg:mx-0"
             >
-              TY BSc Computer Science student passionate about transforming complex data into actionable insights.
+              MSc Data Science and AI Student | BSc Computer Science Graduate | Passionate about transforming complex data into actionable insights.
               Specialized in Power BI, Python, SQL, and Machine Learning.
             </motion.p>
 
@@ -146,7 +148,7 @@ export default function Hero() {
 
               <div className="flex gap-3 justify-center">
                 <motion.a
-                  href="https://github.com/siddhimaurya"
+                  href="https://github.com/sam05maurya"
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.1 }}
@@ -156,7 +158,7 @@ export default function Hero() {
                   <Github size={22} />
                 </motion.a>
                 <motion.a
-                  href="https://linkedin.com/in/siddhimaurya"
+                  href="https://www.linkedin.com/in/siddhi-maurya-s05a04m/"
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.1 }}
@@ -164,6 +166,16 @@ export default function Hero() {
                   className="w-12 h-12 bg-dark-800/80 backdrop-blur border border-dark-700 rounded-xl flex items-center justify-center text-dark-300 hover:text-white hover:border-dark-600 transition-all"
                 >
                   <Linkedin size={22} />
+                </motion.a>
+                <motion.a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=mauryasam556@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="w-12 h-12 bg-dark-800/80 backdrop-blur border border-dark-700 rounded-xl flex items-center justify-center text-dark-300 hover:text-white hover:border-dark-600 transition-all"
+                >
+                 <Mail size={22} />
                 </motion.a>
               </div>
             </motion.div>
