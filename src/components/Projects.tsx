@@ -9,7 +9,7 @@ import {
 import realEstateImg from '../assets/Real_estate.png';
 import fraudImg from '../assets/Fraud.png';
 import managerImg from '../assets/Manager_sales.png';
-import coffeeImg from '../assets/Real_estate.png';
+import coffeeImg from '../assets/Coffee_shop.png';
 
 const projects = [
   {
