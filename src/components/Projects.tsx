@@ -1,45 +1,58 @@
 import { motion } from 'framer-motion';
-import { ExternalLink, BarChart3, Film, Home, TrendingUp } from 'lucide-react';
+import {
+  ExternalLink,
+  BarChart3,
+  Home,
+  TrendingUp,
+  Coffee
+} from 'lucide-react';
+import realEstateImg from '../assets/Real_estate.png';
+import fraudImg from '../assets/Fraud.png';
+import managerImg from '../assets/Manager_sales.png';
+import coffeeImg from '../assets/Real_estate.png';
 
 const projects = [
   {
-    title: 'Automobile Sales Analysis Dashboard',
-    description: 'Interactive Power BI dashboard analyzing historical automobile sales trends and studying recession impacts on vehicle sales with KPI tracking.',
-    tech: ['Power BI', 'DAX', 'Data Modeling'],
-    image: 'https://images.pexels.com/photos/7689873/pexels-photo-7689873.jpeg?auto=compress&cs=tinysrgb&w=600',
-    icon: BarChart3,
-    color: 'from-blue-500 to-cyan-500',
-    link: '#',
-  },
-  {
-    title: 'Netflix Data Analysis',
-    description: 'Exploratory data analysis on Netflix dataset using Python, analyzing IMDb ratings, content types, languages, and release trends.',
-    tech: ['Python', 'Pandas', 'Matplotlib'],
-    image: 'https://images.pexels.com/photos/5768462/pexels-photo-5768462.jpeg?auto=compress&cs=tinysrgb&w=600',
-    icon: Film,
-    color: 'from-red-500 to-pink-500',
-    link: '#',
-  },
-  {
-    title: 'Real Estate Dashboard',
-    description: 'Power BI dashboard for housing market analysis, examining property prices, locations, and sales trends with interactive filters.',
-    tech: ['Power BI', 'Excel', 'Data Visualization'],
-    image: 'https://images.pexels.com/photos/323023/pexels-photo-323023.jpeg?auto=compress&cs=tinysrgb&w=600',
+    title: 'Real Estate Sales Dashboard',
+    description:
+      'Interactive Power BI dashboard analyzing property sales, revenue trends, regional performance, and key real estate KPIs with dynamic filtering.',
+    tech: ['Power BI', 'DAX', 'Excel'],
+    image: realEstateImg,
     icon: Home,
     color: 'from-green-500 to-teal-500',
-    link: '#',
+    link: 'https://github.com/sam05maurya/Real_Estate_Sales_Dashboard',
   },
   {
-    title: 'Data Visualization Projects',
-    description: 'Collection of data visualization projects showcasing various charting techniques and storytelling with data.',
-    tech: ['Tableau', 'Python', 'Excel'],
-    image: 'https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg?auto=compress&cs=tinysrgb&w=600',
+    title: 'Fraud Detection Prediction with ML',
+    description:
+      'Machine learning project for identifying fraudulent transactions using predictive modeling, feature engineering, and classification algorithms.',
+    tech: ['Python', 'Machine Learning', 'Scikit-Learn'],
+    image: fraudImg,
+    icon: BarChart3,
+    color: 'from-red-500 to-pink-500',
+    link: 'https://github.com/sam05maurya/Fraud_Detection_Prediction_with_ML',
+  },
+  {
+    title: 'Manager Sales Analysis Dashboard',
+    description:
+      'Sales performance dashboard providing insights into revenue, profit, product performance, and manager-wise sales trends.',
+    tech: ['Power BI', 'Excel', 'Data Analytics'],
+    image: managerImg,
     icon: TrendingUp,
-    color: 'from-purple-500 to-indigo-500',
-    link: '#',
+    color: 'from-blue-500 to-cyan-500',
+    link: 'https://github.com/sam05maurya/Manager_Sales_Analysis_Dashboard',
+  },
+  {
+    title: 'Coffee Shop Sales Dashboard',
+    description:
+      'Business intelligence dashboard analyzing coffee shop sales, customer purchasing behavior, product demand, and revenue growth.',
+    tech: ['Power BI', 'SQL', 'Data Visualization'],
+    image: coffeeImg,
+    icon: Coffee,
+    color: 'from-amber-500 to-orange-500',
+    link: 'https://github.com/sam05maurya/Coffee_Shop_Sales_Dashboard',
   },
 ];
-
 export default function Projects() {
   return (
     <section id="projects" className="py-20 md:py-28 relative">
@@ -106,12 +119,15 @@ export default function Projects() {
                 </div>
 
                 <motion.a
-                  href={project.link}
-                  whileHover={{ x: 5 }}
-                  className={`flex items-center gap-2 text-sm font-medium bg-gradient-to-r ${project.color} bg-clip-text text-transparent`}
-                >
-                  View Project <ExternalLink size={14} />
-                </motion.a>
+  href={project.link}
+  target="_blank"
+  rel="noopener noreferrer"
+  whileHover={{ x: 5 }}
+  className={`flex items-center gap-2 text-sm font-medium bg-gradient-to-r ${project.color} bg-clip-text text-transparent`}
+>
+  View Project <ExternalLink size={14} />
+</motion.a>
+                
               </div>
             </motion.div>
           ))}
