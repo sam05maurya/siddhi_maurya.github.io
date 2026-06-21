@@ -2,7 +2,7 @@
   "name": "vite-react-typescript-starter",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://sam05maurya.github.io/siddhi_maurya.github.io",
+  "homepage": "https://sam05maurya.github.io/portfolio/",
   "type": "module",
   "scripts": {
   "dev": "vite",
