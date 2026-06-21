@@ -113,9 +113,17 @@ export default function Hero() {
               transition={{ delay: 0.6 }}
               className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8"
             >
-          <motion.a
+             <motion.a
   href={`${import.meta.env.BASE_URL}Siddhi_Maurya_resume.pdf`}
   download
+  whileHover={{ scale: 1.05 }}
+  whileTap={{ scale: 0.95 }}
+  className="inline-flex items-center gap-2 px-6 py-3 rounded-xl
+             bg-gradient-to-r from-primary-500 to-accent-500
+             text-white font-semibold shadow-lg
+             hover:shadow-[0_0_25px_rgba(99,102,241,0.5)]
+             transition-all duration-300
+             backdrop-blur-md border border-white/10"
 >
   <Download size={20} />
   Download Resume
