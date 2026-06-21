@@ -114,7 +114,7 @@ export default function Hero() {
               className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8"
             >
           <motion.a
-  href={`${import.meta.env.BASE_URL}Siddhi_Maurya_Resume.pdf`}
+  href={`${import.meta.env.BASE_URL}Siddhi_Maurya_resume.pdf`}
   download
 >
   <Download size={20} />
